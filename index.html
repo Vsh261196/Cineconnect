@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>CineConnect — Find Your Cinema Companion in the GTA</title>
+    <meta name="description" content="Find verified cinema companions in Toronto, Brampton, Mississauga and the GTA. Browse movie outings, join a group, book seats together. Free to join." />
+    <meta name="keywords" content="cinema companion, movie buddy, watch movies together, GTA movies, Toronto cinema, find movie partner, Cineplex, AMC, IMAX, Brampton movies" />
+    <meta name="author" content="CineConnect" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://cineconnect.vercel.app/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cineconnect.vercel.app/" />
+    <meta property="og:title" content="CineConnect — Never Watch a Movie Alone Again" />
+    <meta property="og:description" content="Find verified cinema companions near you in the GTA. Browse outings, join a group, book cinema seats side-by-side. Free to join." />
+    <meta property="og:image" content="https://cineconnect.vercel.app/og-image.png" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="CineConnect" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CineConnect — Find Your Cinema Companion" />
+    <meta name="twitter:description" content="Find verified cinema companions near you in the GTA." />
+    <meta name="twitter:image" content="https://cineconnect.vercel.app/og-image.png" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ffd93d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="CineConnect" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+
+    <!-- Schema.org structured data for Google rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CineConnect",
+      "url": "https://cineconnect.vercel.app",
+      "description": "Find verified cinema companions in the GTA. Browse movie outings, join a group, book cinema tickets together.",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CAD",
+        "description": "Free to browse and join outings"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Greater Toronto Area",
+        "containsPlace": [
+          {"@type": "City", "name": "Toronto"},
+          {"@type": "City", "name": "Brampton"},
+          {"@type": "City", "name": "Mississauga"},
+          {"@type": "City", "name": "Vaughan"},
+          {"@type": "City", "name": "Markham"}
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CineConnect",
+        "url": "https://cineconnect.vercel.app"
+      }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { background: #0a0a12; -webkit-font-smoothing: antialiased; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
