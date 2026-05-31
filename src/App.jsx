@@ -8,17 +8,7 @@ const ADMIN_EMAIL = "sandhuvishu16@yahoo.com"; // ← your email
 // ============================================================
 // SUPABASE SAFE CLIENT
 // ============================================================
-let supabase = null;
-try {
-  const url = import.meta.env.VITE_SUPABASE_URL;
-  const key = import.meta.env.VITE_SUPABASE_ANON_KEY;
-  if (url && key && url.startsWith('http')) {
-    const { createClient } = await import('@supabase/supabase-js');
-    supabase = createClient(url, key);
-  }
-} catch (e) {
-  console.log('Running in demo mode');
-}
+const supabase = null;
 
 // ============================================================
 // SAMPLE DATA (shown when Supabase not connected)
