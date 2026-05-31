@@ -38,7 +38,7 @@ class ErrorBoundary extends React.Component {
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ErrorBoundary>
+  <React.StrictMode>
     <App />
-  </ErrorBoundary>
+  </React.StrictMode>
 )
